@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
-    <metadata>
+  <metadata>
     <!-- The identifier that must be unique within the hosting gallery -->
     <id>Dracoon.Crypto.Sdk</id>
 
@@ -17,11 +17,12 @@
     <owners>dracoon</owners>
 
     <!-- License and project URLs provide links for the gallery -->
-    <licenseUrl>https://www.apache.org/licenses/LICENSE-2.0.txt</licenseUrl>
-    <projectUrl>https://github.com/dracoon/dracoon-csharp-crypto-sdk</projectUrl>
+    <license type="expression">	Apache-2.0</license>
+    <projectUrl>https://davisol@dev.azure.com/davisol/3rdParty/_git/dracoon-csharp-crypto-sdk</projectUrl>
 
+      
     <!-- The icon is used in Visual Studio's package manager UI -->
-    <iconUrl>https://raw.githubusercontent.com/dracoon/dracoon-csharp-crypto-sdk/master/DracoonCryptoSdk/DracoonCryptoSdk_NugetImage.png</iconUrl>
+    <icon>DracoonCryptoSdk_NugetImage.png</icon>
 
     <!-- If true, this value prompts the user to accept the license when
             installing the package. -->
@@ -29,17 +30,26 @@
 
     <!-- The description can be used in package manager UI. Note that the
             nuget.org gallery uses information you add in the portal. -->
-    <description>A library which implements the client-side encryption of Dracoon.</description>
+    <description>A library which implements the client-side encryption of Dracoon / Development version of DAVISOL.</description>
 
     <!-- Copyright information -->
-    <copyright>Copyright ©2017 Dracoon GmbH</copyright>
+    <copyright>Copyright ©2017 Dracoon GmbH, Copyright ©2019 Sebastian Hübner - DAVISOL</copyright>
 
     <!-- Tags appear in the gallery and can be used for tag searches -->
-    <tags>dracoon crypto cryptography encryption</tags>
+    <tags>dracoon crypto cryptography encryption davisol</tags>
+
+    <releaseNotes>* Development * fork of offical Dracoon C# Crypto SDK: https://github.com/dracoon/dracoon-csharp-crypto-sdk</releaseNotes>
 
     <!-- Dependencies are automatically installed when the package is installed -->
     <dependencies>
-        <dependency id="BouncyCastle" version="1.8.1"/>
+      <group targetFramework=".NETFramework4.5.2">
+        <dependency id="BouncyCastle" version="1.8.5"/>
+      </group>      
     </dependencies>
-    </metadata>
+  </metadata>
+  <files>
+    <file src="bin\Release\Dracoon.Crypto.Sdk.dll" target="lib\net452\Dracoon.Crypto.Sdk.dll" />
+    <file src="bin\Release\Dracoon.Crypto.Sdk.xml" target="lib\net452\Dracoon.Crypto.Sdk.xml" />
+    <file src="DracoonCryptoSdk_NugetImage.png" target=""/>
+  </files>
 </package>
