@@ -17,12 +17,12 @@
     <owners>dracoon</owners>
 
     <!-- License and project URLs provide links for the gallery -->
-    <license type="expression">	Apache-2.0</license>
-    <projectUrl>https://davisol@dev.azure.com/davisol/3rdParty/_git/dracoon-csharp-crypto-sdk</projectUrl>
+    <!-- License and project URLs provide links for the gallery -->
+    <licenseUrl>https://www.apache.org/licenses/LICENSE-2.0.txt</licenseUrl>
+    <projectUrl>https://github.com/dracoon/dracoon-csharp-crypto-sdk</projectUrl>
 
-      
     <!-- The icon is used in Visual Studio's package manager UI -->
-    <icon>DracoonCryptoSdk_NugetImage.png</icon>
+    <iconUrl>https://raw.githubusercontent.com/dracoon/dracoon-csharp-crypto-sdk/master/DracoonCryptoSdk/DracoonCryptoSdk_NugetImage.png</iconUrl>
 
     <!-- If true, this value prompts the user to accept the license when
             installing the package. -->
@@ -38,7 +38,7 @@
     <!-- Tags appear in the gallery and can be used for tag searches -->
     <tags>dracoon crypto cryptography encryption davisol</tags>
 
-    <releaseNotes>* Development * fork of offical Dracoon C# Crypto SDK: https://github.com/dracoon/dracoon-csharp-crypto-sdk</releaseNotes>
+    <releaseNotes>*Development* fork of offical Dracoon C# Crypto SDK: https://github.com/dracoon/dracoon-csharp-crypto-sdk</releaseNotes>
 
     <!-- Dependencies are automatically installed when the package is installed -->
     <dependencies>
@@ -50,6 +50,5 @@
   <files>
     <file src="bin\Release\Dracoon.Crypto.Sdk.dll" target="lib\net452\Dracoon.Crypto.Sdk.dll" />
     <file src="bin\Release\Dracoon.Crypto.Sdk.xml" target="lib\net452\Dracoon.Crypto.Sdk.xml" />
-    <file src="DracoonCryptoSdk_NugetImage.png" target=""/>
   </files>
 </package>
