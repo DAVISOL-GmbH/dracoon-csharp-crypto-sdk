@@ -1,10 +1,10 @@
-﻿using Org.BouncyCastle.Crypto;
+using System;
+using System.IO;
+using Dracoon.Crypto.Sdk.Model;
+using Org.BouncyCastle.Crypto;
 using Org.BouncyCastle.Crypto.Engines;
 using Org.BouncyCastle.Crypto.Modes;
 using Org.BouncyCastle.Crypto.Parameters;
-using Dracoon.Crypto.Sdk.Model;
-using System;
-using System.IO;
 
 namespace Dracoon.Crypto.Sdk {
     public class FileCipher {
@@ -20,7 +20,7 @@ namespace Dracoon.Crypto.Sdk {
                 byte[] key = Convert.FromBase64String(fileKey.Key);
                 byte[] iv = Convert.FromBase64String(fileKey.Iv);
                 AeadParameters parameters = new AeadParameters(new KeyParameter(key), 8 * tagSize, iv);
-                realCipher = new GcmBlockCipher(new AesFastEngine());
+                realCipher = new GcmBlockCipher(new AesEngine());
                 realCipher.Init(forEncryption, parameters);
             } catch (Exception e) {
                 throw new CryptoSystemException("Could not create " + (forEncryption ? "encryption" : "decryption") + " ciper.", e);
