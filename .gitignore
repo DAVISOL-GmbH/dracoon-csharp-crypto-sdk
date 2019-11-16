@@ -25,3 +25,6 @@ packages/
 ## Windows
 Thumbs.db
 Desktop.ini
+
+## VS strong naming
+*.snk

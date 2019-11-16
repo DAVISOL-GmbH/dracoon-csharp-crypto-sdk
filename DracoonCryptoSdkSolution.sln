@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DracoonCryptoSdkExample", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9E0589C8-2C58-4E96-A2A6-1824CAF80CB7}"
 	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		DavisolDracoon.snk = DavisolDracoon.snk
 		NuGet.config.unused = NuGet.config.unused
 	EndProjectSection
 EndProject
