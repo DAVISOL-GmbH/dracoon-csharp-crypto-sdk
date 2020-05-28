@@ -1,18 +1,26 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26430.16
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DracoonCryptoSdk", "DracoonCryptoSdk\DracoonCryptoSdk.csproj", "{7FD948AF-07CB-415C-A6E8-5985AD82D2CE}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DracoonCryptoSdkTest", "DracoonCryptoSdkTest\DracoonCryptoSdkTest.csproj", "{BE2B0D34-FBBC-48B1-BC55-8ECC5015AF07}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B6255E80-72FD-4B23-847A-B6749F7A7969} = {B6255E80-72FD-4B23-847A-B6749F7A7969}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DracoonCryptoSdkExample", "DracoonCryptoSdkExample\DracoonCryptoSdkExample.csproj", "{4BAEA086-6A9C-4675-999A-56A75372E63A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B6255E80-72FD-4B23-847A-B6749F7A7969} = {B6255E80-72FD-4B23-847A-B6749F7A7969}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9E0589C8-2C58-4E96-A2A6-1824CAF80CB7}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DracoonCryptoSdkOld", "DracoonCryptoSdkOld\DracoonCryptoSdkOld.csproj", "{7FD948AF-07CB-415C-A6E8-5985AD82D2CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DracoonCryptoSdk", "DracoonCryptoSdk\DracoonCryptoSdk.csproj", "{B6255E80-72FD-4B23-847A-B6749F7A7969}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,10 +28,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7FD948AF-07CB-415C-A6E8-5985AD82D2CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7FD948AF-07CB-415C-A6E8-5985AD82D2CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7FD948AF-07CB-415C-A6E8-5985AD82D2CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7FD948AF-07CB-415C-A6E8-5985AD82D2CE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BE2B0D34-FBBC-48B1-BC55-8ECC5015AF07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BE2B0D34-FBBC-48B1-BC55-8ECC5015AF07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE2B0D34-FBBC-48B1-BC55-8ECC5015AF07}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -32,6 +36,12 @@ Global
 		{4BAEA086-6A9C-4675-999A-56A75372E63A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4BAEA086-6A9C-4675-999A-56A75372E63A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4BAEA086-6A9C-4675-999A-56A75372E63A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FD948AF-07CB-415C-A6E8-5985AD82D2CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FD948AF-07CB-415C-A6E8-5985AD82D2CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6255E80-72FD-4B23-847A-B6749F7A7969}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6255E80-72FD-4B23-847A-B6749F7A7969}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6255E80-72FD-4B23-847A-B6749F7A7969}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6255E80-72FD-4B23-847A-B6749F7A7969}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

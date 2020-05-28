@@ -1,4 +1,4 @@
-﻿using Dracoon.Crypto.Sdk.Model;
+using Dracoon.Crypto.Sdk.Model;
 using System;
 using System.Diagnostics;
 using System.IO;

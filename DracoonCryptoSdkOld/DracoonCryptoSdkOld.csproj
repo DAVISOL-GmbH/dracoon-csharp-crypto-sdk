@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4BAEA086-6A9C-4675-999A-56A75372E63A}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
-    <RootNamespace>Dracoon.Crypto.Sdk.Example</RootNamespace>
-    <AssemblyName>Dracoon.Crypto.Sdk.Example</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <ProjectGuid>{7FD948AF-07CB-415C-A6E8-5985AD82D2CE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dracoon.Crypto.Sdk</RootNamespace>
+    <AssemblyName>Dracoon.Crypto.Sdk</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,22 +21,24 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\Dracoon.Crypto.Sdk.xml</DocumentationFile>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject>Dracoon.Crypto.Sdk.Example.Program</StartupObject>
-  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.5.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.5\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -48,17 +49,39 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Crypto.cs" />
+    <Compile Include="CryptoConstants.cs" />
+    <Compile Include="CryptoException.cs" />
+    <Compile Include="CryptoSystemException.cs" />
+    <Compile Include="FileCipher.cs" />
+    <Compile Include="FileDecryptionCipher.cs" />
+    <Compile Include="BadFileException.cs" />
+    <Compile Include="FileEncryptionCipher.cs" />
+    <Compile Include="InvalidFileKeyException.cs" />
+    <Compile Include="InvalidKeyPairException.cs" />
+    <Compile Include="InvalidPasswordException.cs" />
+    <Compile Include="Model\EncryptedDataContainer.cs" />
+    <Compile Include="Model\EncryptedFileKey.cs" />
+    <Compile Include="Model\PlainDataContainer.cs" />
+    <Compile Include="Model\PlainFileKey.cs" />
+    <Compile Include="Model\UserKeyPair.cs" />
+    <Compile Include="Model\UserPrivateKey.cs" />
+    <Compile Include="Model\UserPublicKey.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="DavisolPackage.nuspec" />
+    <None Include="DracoonCryptoSdk.nuspec" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DracoonCryptoSdk\DracoonCryptoSdk.csproj">
-      <Project>{B6255E80-72FD-4B23-847A-B6749F7A7969}</Project>
-      <Name>DracoonCryptoSdk</Name>
-    </ProjectReference>
+    <Content Include="DracoonCryptoSdk_NugetImage.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
 </Project>
