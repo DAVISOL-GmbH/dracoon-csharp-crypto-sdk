@@ -30,13 +30,13 @@
 
     <!-- The description can be used in package manager UI. Note that the
             nuget.org gallery uses information you add in the portal. -->
-    <description>A library which implements the client-side encryption of Dracoon / Development version of DAVISOL.</description>
+    <description>A library which implements the client-side encryption of Dracoon / Development version of DAVISOL. This package references .NET Standard and can therefore by used with classic .NET (4.6.1 or newer) as well as with .NET Core (2.0 or newer).</description>
 
     <!-- Copyright information -->
-    <copyright>Copyright ©2017 Dracoon GmbH, Copyright ©2020 Sebastian Hübner - DAVISOL</copyright>
+    <copyright>Copyright ©2017 Dracoon GmbH, enhanced by DAVISOL, Copyright ©2020 Sebastian Hübner - DAVISOL</copyright>
 
     <!-- Tags appear in the gallery and can be used for tag searches -->
-    <tags>dracoon crypto cryptography encryption davisol</tags>
+    <tags>dracoon crypto cryptography encryption netstandard davisol</tags>
 
     <releaseNotes>*Development* fork of offical Dracoon C# Crypto SDK: https://github.com/dracoon/dracoon-csharp-crypto-sdk</releaseNotes>
 
