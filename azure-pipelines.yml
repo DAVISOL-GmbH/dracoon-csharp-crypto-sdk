@@ -12,7 +12,7 @@ jobs:
 - job: Job_1
   displayName: DAVISOL agent job - Build and deploy dracoon-csharp-crypto-sdk
   pool:
-    name: DAVISOL
+    name: DAVISOL Pipelines
     demands:
     - msbuild
   steps:
@@ -39,7 +39,7 @@ jobs:
       Company: Dracoon GmbH
       Product: Dracoon Crypto Sdk for .NET Standard
       Description: A library which implements the client-side encryption of Dracoon, ported to .NET Standard and enhanced by DAVISOL GmbH.
-      Copyright: Copyright © 2017
+      Copyright: Copyright Â© 2017
       PackageLicenseUrl: https://www.apache.org/licenses/LICENSE-2.0.txt
       PackageProjectUrl: https://github.com/dracoon/dracoon-csharp-crypto-sdk
       PackageIconUrl: https://raw.githubusercontent.com/dracoon/dracoon-csharp-crypto-sdk/master/DracoonCryptoSdk/DracoonCryptoSdk_NugetImage.png
