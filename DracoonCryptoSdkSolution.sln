@@ -3,12 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DracoonCryptoSdkTest", "DracoonCryptoSdkTest\DracoonCryptoSdkTest.csproj", "{BE2B0D34-FBBC-48B1-BC55-8ECC5015AF07}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DracoonCryptoSdkTest", "DracoonCryptoSdkTest\DracoonCryptoSdkTest.csproj", "{BE2B0D34-FBBC-48B1-BC55-8ECC5015AF07}"
 	ProjectSection(ProjectDependencies) = postProject
 		{B6255E80-72FD-4B23-847A-B6749F7A7969} = {B6255E80-72FD-4B23-847A-B6749F7A7969}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DracoonCryptoSdkExample", "DracoonCryptoSdkExample\DracoonCryptoSdkExample.csproj", "{4BAEA086-6A9C-4675-999A-56A75372E63A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DracoonCryptoSdkExample", "DracoonCryptoSdkExample\DracoonCryptoSdkExample.csproj", "{4BAEA086-6A9C-4675-999A-56A75372E63A}"
 	ProjectSection(ProjectDependencies) = postProject
 		{B6255E80-72FD-4B23-847A-B6749F7A7969} = {B6255E80-72FD-4B23-847A-B6749F7A7969}
 	EndProjectSection
@@ -16,6 +16,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9E0589C8-2C58-4E96-A2A6-1824CAF80CB7}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		azure-pipelines.yml = azure-pipelines.yml
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DracoonCryptoSdk", "DracoonCryptoSdk\DracoonCryptoSdk.csproj", "{B6255E80-72FD-4B23-847A-B6749F7A7969}"

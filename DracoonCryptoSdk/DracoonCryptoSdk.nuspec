@@ -7,7 +7,7 @@
     <title>Davisol.Dracoon Crypto Sdk</title>
 
     <!-- The package version number that is used when resolving dependencies -->
-    <version>1.1.1</version>
+    <version>2.1.0-alpha</version>
 
     <!-- Authors contain text that appears directly on the gallery -->
     <authors>dracoon developers</authors>
@@ -30,15 +30,15 @@
 
     <!-- The description can be used in package manager UI. Note that the
             nuget.org gallery uses information you add in the portal. -->
-    <description>A library which implements the client-side encryption of Dracoon / Development version of DAVISOL.</description>
+    <description>A library which implements the client-side encryption of Dracoon / with enhancements by DAVISOL GmbH.</description>
 
     <!-- Copyright information -->
-    <copyright>Copyright ©2017 Dracoon GmbH, Copyright ©2019 Sebastian Hübner - DAVISOL</copyright>
+    <copyright>Copyright ©2017 Dracoon GmbH, Copyright ©2021 DAVISOL GmbH</copyright>
 
     <!-- Tags appear in the gallery and can be used for tag searches -->
     <tags>dracoon crypto cryptography encryption davisol</tags>
 
-    <releaseNotes>* Development * fork of offical Dracoon C# Crypto SDK: https://github.com/dracoon/dracoon-csharp-crypto-sdk</releaseNotes>
+    <releaseNotes>Fork of offical Dracoon C# Crypto SDK: https://github.com/dracoon/dracoon-csharp-crypto-sdk</releaseNotes>
 
     <!-- Dependencies are automatically installed when the package is installed -->
     <dependencies>
