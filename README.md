@@ -3,6 +3,8 @@
 
 A library which implements the client-side encryption of Dracoon.
 
+This package was ported to .NET 5.0 by DAVISOL. Please note that we do not offer binary releases. For official releases from Dracoon please refer to the Download section below.
+
 # Introduction
 
 A document which describes the client-side encryption in detail can be found here:
@@ -13,24 +15,24 @@ https://support.dracoon.com/hc/en-us/articles/360000986345
 
 #### Minimum Requirements
 
-.NET 2
+.NET 5.0
 
 #### Download
 
 NuGet: Add the this dependency to your packages.config:
 If you're using nuget with package management "Packages.config", then edit your project's "packages.config" and add this to the packages section:
 ```xml
-<package id="Dracoon.Crypto.Sdk" version="2.1.0" />
+<package id="Dracoon.Crypto.Sdk.Net5" version="2.1.0" />
 ```
 If you are using Visual Studio 2017 (or higher) add you're using nuget with package management "PackageReference" then edit your .csproj file and add this to the package dependency group:
 ```xml
-<PackageReference Include="Dracoon.Crypto.Sdk" Version="2.1.0" />
+<PackageReference Include="Dracoon.Crypto.Sdk.Net5" Version="2.1.0" />
 ```
 
 DLL import: The latest DLL can be found [here](https://github.com/dracoon/dracoon-csharp-crypto-sdk/releases).
 
 Note that you also need to include the following dependencies:
-1. Bouncy Castle Provider (v1.8.6.1): https://www.nuget.org/packages/BouncyCastle/
+1. Bouncy Castle Provider (v1.9.0): https://www.nuget.org/packages/BouncyCastle/
 
 # Example
 
@@ -73,6 +75,7 @@ static void Main(String[] args) {
 # Copyright and License
 
 Copyright 2017 Dracoon GmbH. All rights reserved.
+Copyright 2021 DAVISOL GmbH. All rights reserved.
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the
 License. You may obtain a copy of the License at
