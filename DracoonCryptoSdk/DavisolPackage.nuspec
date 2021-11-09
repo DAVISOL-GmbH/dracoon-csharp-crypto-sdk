@@ -18,7 +18,7 @@
 
     <!-- License and project URLs provide links for the gallery -->
     <!-- License and project URLs provide links for the gallery -->
-    <license type="Apache-2.0">Apache-2.0</license>
+    <license type="Apache-2.0">Apache License 2.0</license>
     <projectUrl>https://github.com/shuebner20/dracoon-csharp-crypto-sdk</projectUrl>
 
     <!-- The icon is used in Visual Studio's package manager UI -->
