@@ -34,7 +34,7 @@ jobs:
     inputs:
       InsertAttributes: true
       GeneratePackageOnBuild: true
-      PackageId: Dracoon.Crypto.Sdk.NetStandard
+      PackageId: Dracoon.Crypto.Sdk.Net5
       Authors: DRACOON developers, enhancements by DAVISOL GmbH
       Company: Dracoon GmbH
       Product: Dracoon Crypto Sdk for .NET Standard
@@ -59,11 +59,11 @@ jobs:
       clean: true
       restoreNugetPackages: true
   - task: CopyFiles@2
-    displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)\lib\netstandard2.0'
+    displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)\lib\net5.0'
     inputs:
       SourceFolder: DracoonCryptoSdk/bin/Release
       Contents: '**/Dracoon.Crypto.Sdk.*'
-      TargetFolder: $(Build.ArtifactStagingDirectory)\lib\netstandard2.0
+      TargetFolder: $(Build.ArtifactStagingDirectory)\lib\net5.0
       CleanTargetFolder: true
       OverWrite: true
       flattenFolders: true
