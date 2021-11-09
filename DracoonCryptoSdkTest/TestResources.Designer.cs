@@ -9,9 +9,6 @@
 //------------------------------------------------------------------------------
 
 namespace Dracoon.Crypto.Sdk.Test {
-    using System;
-    
-    
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -23,15 +20,15 @@ namespace Dracoon.Crypto.Sdk.Test {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class TestResources {
-        
+
         private static global::System.Resources.ResourceManager resourceMan;
-        
+
         private static global::System.Globalization.CultureInfo resourceCulture;
-        
+
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
         internal TestResources() {
         }
-        
+
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
@@ -45,7 +42,7 @@ namespace Dracoon.Crypto.Sdk.Test {
                 return resourceMan;
             }
         }
-        
+
         /// <summary>
         ///   Overrides the current thread's CurrentUICulture property for all
         ///   resource lookups using this strongly typed resource class.
@@ -59,57 +56,57 @@ namespace Dracoon.Crypto.Sdk.Test {
                 resourceCulture = value;
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
         /// </summary>
         internal static byte[] csharp_aes256gcm_enc_file {
             get {
                 object obj = ResourceManager.GetObject("csharp_aes256gcm_enc_file", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
         /// </summary>
         internal static byte[] csharp_fk_rsa2048_aes256gcm_enc_file_key {
             get {
                 object obj = ResourceManager.GetObject("csharp_fk_rsa2048_aes256gcm_enc_file_key", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
         /// </summary>
         internal static byte[] csharp_fk_rsa2048_aes256gcm_plain_file_key {
             get {
                 object obj = ResourceManager.GetObject("csharp_fk_rsa2048_aes256gcm_plain_file_key", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
         /// </summary>
         internal static byte[] csharp_fk_rsa4096_aes256gcm_enc_file_key {
             get {
                 object obj = ResourceManager.GetObject("csharp_fk_rsa4096_aes256gcm_enc_file_key", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
         /// </summary>
         internal static byte[] csharp_fk_rsa4096_aes256gcm_plain_file_key {
             get {
                 object obj = ResourceManager.GetObject("csharp_fk_rsa4096_aes256gcm_plain_file_key", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die acw9q857n( ähnelt.
         /// </summary>
@@ -118,27 +115,27 @@ namespace Dracoon.Crypto.Sdk.Test {
                 return ResourceManager.GetString("csharp_kp_rsa2048_password", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
         /// </summary>
         internal static byte[] csharp_kp_rsa2048_private_key {
             get {
                 object obj = ResourceManager.GetObject("csharp_kp_rsa2048_private_key", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
         /// </summary>
         internal static byte[] csharp_kp_rsa2048_public_key {
             get {
                 object obj = ResourceManager.GetObject("csharp_kp_rsa2048_public_key", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die acw9q857n( ähnelt.
         /// </summary>
@@ -147,77 +144,77 @@ namespace Dracoon.Crypto.Sdk.Test {
                 return ResourceManager.GetString("csharp_kp_rsa4096_password", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] csharp_kp_rsa4096_private_key {
             get {
                 object obj = ResourceManager.GetObject("csharp_kp_rsa4096_private_key", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
         /// </summary>
         internal static byte[] csharp_kp_rsa4096_public_key {
             get {
                 object obj = ResourceManager.GetObject("csharp_kp_rsa4096_public_key", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
         /// </summary>
         internal static byte[] csharp_plain_file {
             get {
                 object obj = ResourceManager.GetObject("csharp_plain_file", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] enc_file_key_bad_iv {
             get {
                 object obj = ResourceManager.GetObject("enc_file_key_bad_iv", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] enc_file_key_bad_key {
             get {
                 object obj = ResourceManager.GetObject("enc_file_key_bad_key", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] enc_file_key_bad_tag {
             get {
                 object obj = ResourceManager.GetObject("enc_file_key_bad_tag", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] enc_file_key_bad_version {
             get {
                 object obj = ResourceManager.GetObject("enc_file_key_bad_version", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to XZoZFAZekI+xyaI6Kirb/6PfGvjH0Gi5EPA5XU49OFt9wqdDsISEtvSKQ6ISgOZ+mso=.
         /// </summary>
@@ -226,57 +223,57 @@ namespace Dracoon.Crypto.Sdk.Test {
                 return ResourceManager.GetString("enc_file_modified", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
         /// </summary>
         internal static byte[] java_aes256gcm_enc_file {
             get {
                 object obj = ResourceManager.GetObject("java_aes256gcm_enc_file", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
         /// </summary>
         internal static byte[] java_fk_rsa2048_aes256gcm_enc_file_key {
             get {
                 object obj = ResourceManager.GetObject("java_fk_rsa2048_aes256gcm_enc_file_key", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
         /// </summary>
         internal static byte[] java_fk_rsa2048_aes256gcm_plain_file_key {
             get {
                 object obj = ResourceManager.GetObject("java_fk_rsa2048_aes256gcm_plain_file_key", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
         /// </summary>
         internal static byte[] java_fk_rsa4096_aes256gcm_enc_file_key {
             get {
                 object obj = ResourceManager.GetObject("java_fk_rsa4096_aes256gcm_enc_file_key", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
         /// </summary>
         internal static byte[] java_fk_rsa4096_aes256gcm_plain_file_key {
             get {
                 object obj = ResourceManager.GetObject("java_fk_rsa4096_aes256gcm_plain_file_key", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Qwer1234! ähnelt.
         /// </summary>
@@ -285,27 +282,27 @@ namespace Dracoon.Crypto.Sdk.Test {
                 return ResourceManager.GetString("java_kp_rsa2048_password", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
         /// </summary>
         internal static byte[] java_kp_rsa2048_private_key {
             get {
                 object obj = ResourceManager.GetObject("java_kp_rsa2048_private_key", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
         /// </summary>
         internal static byte[] java_kp_rsa2048_public_key {
             get {
                 object obj = ResourceManager.GetObject("java_kp_rsa2048_public_key", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Qwer1234! ähnelt.
         /// </summary>
@@ -314,87 +311,87 @@ namespace Dracoon.Crypto.Sdk.Test {
                 return ResourceManager.GetString("java_kp_rsa4096_password", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
         /// </summary>
         internal static byte[] java_kp_rsa4096_private_key {
             get {
                 object obj = ResourceManager.GetObject("java_kp_rsa4096_private_key", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
         /// </summary>
         internal static byte[] java_kp_rsa4096_public_key {
             get {
                 object obj = ResourceManager.GetObject("java_kp_rsa4096_public_key", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
         /// </summary>
         internal static byte[] java_plain_file {
             get {
                 object obj = ResourceManager.GetObject("java_plain_file", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
         /// </summary>
         internal static byte[] js_aes256gcm_enc_file {
             get {
                 object obj = ResourceManager.GetObject("js_aes256gcm_enc_file", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
         /// </summary>
         internal static byte[] js_fk_rsa2048_aes256gcm_enc_file_key {
             get {
                 object obj = ResourceManager.GetObject("js_fk_rsa2048_aes256gcm_enc_file_key", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
         /// </summary>
         internal static byte[] js_fk_rsa2048_aes256gcm_plain_file_key {
             get {
                 object obj = ResourceManager.GetObject("js_fk_rsa2048_aes256gcm_plain_file_key", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
         /// </summary>
         internal static byte[] js_fk_rsa4096_aes256gcm_enc_file_key {
             get {
                 object obj = ResourceManager.GetObject("js_fk_rsa4096_aes256gcm_enc_file_key", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
         /// </summary>
         internal static byte[] js_fk_rsa4096_aes256gcm_plain_file_key {
             get {
                 object obj = ResourceManager.GetObject("js_fk_rsa4096_aes256gcm_plain_file_key", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Qwer1234! ähnelt.
         /// </summary>
@@ -403,27 +400,27 @@ namespace Dracoon.Crypto.Sdk.Test {
                 return ResourceManager.GetString("js_kp_rsa2048_password", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
         /// </summary>
         internal static byte[] js_kp_rsa2048_private_key {
             get {
                 object obj = ResourceManager.GetObject("js_kp_rsa2048_private_key", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] js_kp_rsa2048_public_key {
             get {
                 object obj = ResourceManager.GetObject("js_kp_rsa2048_public_key", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Qwer1234! ähnelt.
         /// </summary>
@@ -432,67 +429,67 @@ namespace Dracoon.Crypto.Sdk.Test {
                 return ResourceManager.GetString("js_kp_rsa4096_password", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
         /// </summary>
         internal static byte[] js_kp_rsa4096_private_key {
             get {
                 object obj = ResourceManager.GetObject("js_kp_rsa4096_private_key", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
         /// </summary>
         internal static byte[] js_kp_rsa4096_public_key {
             get {
                 object obj = ResourceManager.GetObject("js_kp_rsa4096_public_key", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
         /// </summary>
         internal static byte[] js_plain_file {
             get {
                 object obj = ResourceManager.GetObject("js_plain_file", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] plain_file_key_bad_iv {
             get {
                 object obj = ResourceManager.GetObject("plain_file_key_bad_iv", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] plain_file_key_bad_key {
             get {
                 object obj = ResourceManager.GetObject("plain_file_key_bad_key", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] plain_file_key_bad_tag {
             get {
                 object obj = ResourceManager.GetObject("plain_file_key_bad_tag", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to XGVzdEFCQ0RFRkdIIDEyMwpUZXN0SUpLTE1OT1AgNDU2ClRlc3RRUlNUVVZXWCA3ODk=.
         /// </summary>
@@ -501,97 +498,97 @@ namespace Dracoon.Crypto.Sdk.Test {
                 return ResourceManager.GetString("plain_file_modified", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] private_key_bad_asn1 {
             get {
                 object obj = ResourceManager.GetObject("private_key_bad_asn1", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] private_key_bad_pem {
             get {
                 object obj = ResourceManager.GetObject("private_key_bad_pem", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] private_key_bad_value {
             get {
                 object obj = ResourceManager.GetObject("private_key_bad_value", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] private_key_bad_version {
             get {
                 object obj = ResourceManager.GetObject("private_key_bad_version", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] ruby_aes256gcm_enc_file {
             get {
                 object obj = ResourceManager.GetObject("ruby_aes256gcm_enc_file", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
         /// </summary>
         internal static byte[] ruby_fk_rsa2048_aes256gcm_enc_file_key {
             get {
                 object obj = ResourceManager.GetObject("ruby_fk_rsa2048_aes256gcm_enc_file_key", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
         /// </summary>
         internal static byte[] ruby_fk_rsa2048_aes256gcm_plain_file_key {
             get {
                 object obj = ResourceManager.GetObject("ruby_fk_rsa2048_aes256gcm_plain_file_key", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
         /// </summary>
         internal static byte[] ruby_fk_rsa4096_aes256gcm_enc_file_key {
             get {
                 object obj = ResourceManager.GetObject("ruby_fk_rsa4096_aes256gcm_enc_file_key", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
         /// </summary>
         internal static byte[] ruby_fk_rsa4096_aes256gcm_plain_file_key {
             get {
                 object obj = ResourceManager.GetObject("ruby_fk_rsa4096_aes256gcm_plain_file_key", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Qwer1234! ähnelt.
         /// </summary>
@@ -600,27 +597,27 @@ namespace Dracoon.Crypto.Sdk.Test {
                 return ResourceManager.GetString("ruby_kp_rsa2048_password", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
         /// </summary>
         internal static byte[] ruby_kp_rsa2048_private_key {
             get {
                 object obj = ResourceManager.GetObject("ruby_kp_rsa2048_private_key", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
         /// </summary>
         internal static byte[] ruby_kp_rsa2048_public_key {
             get {
                 object obj = ResourceManager.GetObject("ruby_kp_rsa2048_public_key", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Qwer1234! ähnelt.
         /// </summary>
@@ -629,87 +626,87 @@ namespace Dracoon.Crypto.Sdk.Test {
                 return ResourceManager.GetString("ruby_kp_rsa4096_password", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
         /// </summary>
         internal static byte[] ruby_kp_rsa4096_private_key {
             get {
                 object obj = ResourceManager.GetObject("ruby_kp_rsa4096_private_key", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
         /// </summary>
         internal static byte[] ruby_kp_rsa4096_public_key {
             get {
                 object obj = ResourceManager.GetObject("ruby_kp_rsa4096_public_key", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
         /// </summary>
         internal static byte[] ruby_plain_file {
             get {
                 object obj = ResourceManager.GetObject("ruby_plain_file", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
         /// </summary>
         internal static byte[] swift_aes256gcm_enc_file {
             get {
                 object obj = ResourceManager.GetObject("swift_aes256gcm_enc_file", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
         /// </summary>
         internal static byte[] swift_fk_rsa2048_aes256gcm_enc_file_key {
             get {
                 object obj = ResourceManager.GetObject("swift_fk_rsa2048_aes256gcm_enc_file_key", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
         /// </summary>
         internal static byte[] swift_fk_rsa2048_aes256gcm_plain_file_key {
             get {
                 object obj = ResourceManager.GetObject("swift_fk_rsa2048_aes256gcm_plain_file_key", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
         /// </summary>
         internal static byte[] swift_fk_rsa4096_aes256gcm_enc_file_key {
             get {
                 object obj = ResourceManager.GetObject("swift_fk_rsa4096_aes256gcm_enc_file_key", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
         /// </summary>
         internal static byte[] swift_fk_rsa4096_aes256gcm_plain_file_key {
             get {
                 object obj = ResourceManager.GetObject("swift_fk_rsa4096_aes256gcm_plain_file_key", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Pass1234! ähnelt.
         /// </summary>
@@ -718,27 +715,27 @@ namespace Dracoon.Crypto.Sdk.Test {
                 return ResourceManager.GetString("swift_kp_rsa2048_password", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
         /// </summary>
         internal static byte[] swift_kp_rsa2048_private_key {
             get {
                 object obj = ResourceManager.GetObject("swift_kp_rsa2048_private_key", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
         /// </summary>
         internal static byte[] swift_kp_rsa2048_public_key {
             get {
                 object obj = ResourceManager.GetObject("swift_kp_rsa2048_public_key", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die ABC123DEFF456 ähnelt.
         /// </summary>
@@ -747,34 +744,34 @@ namespace Dracoon.Crypto.Sdk.Test {
                 return ResourceManager.GetString("swift_kp_rsa4096_password", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
         /// </summary>
         internal static byte[] swift_kp_rsa4096_private_key {
             get {
                 object obj = ResourceManager.GetObject("swift_kp_rsa4096_private_key", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
         /// </summary>
         internal static byte[] swift_kp_rsa4096_public_key {
             get {
                 object obj = ResourceManager.GetObject("swift_kp_rsa4096_public_key", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
-        
+
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Byte[].
         /// </summary>
         internal static byte[] swift_plain_file {
             get {
                 object obj = ResourceManager.GetObject("swift_plain_file", resourceCulture);
-                return ((byte[])(obj));
+                return ((byte[]) (obj));
             }
         }
     }

@@ -15,15 +15,6 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
-    <Compile Update="TestResources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TestResources.resx</DependentUpon>
-    </Compile>
-    <Compile Include="TestUtilities.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
     <None Include="Resources\FileKeyFail\enc_file_key_bad_iv.json" />
     <None Include="Resources\FileKeyFail\enc_file_key_bad_key.json" />
     <None Include="Resources\FileKeyFail\enc_file_key_bad_tag.json" />
@@ -105,7 +96,6 @@
   <ItemGroup>
     <None Include="Resources\FileKeyFail\plain_file_modified.txt" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Content Include="Resources\Keys_CSharp\data\kp_rsa2048\password.txt" />
     <Content Include="Resources\Keys_CSharp\data\kp_rsa4096\password.txt" />
@@ -117,6 +107,11 @@
     <Content Include="Resources\Keys_Ruby\data\kp_rsa4096\password.txt" />
     <Content Include="Resources\Keys_Swift\data\kp_rsa2048\password.txt" />
     <Content Include="Resources\Keys_Swift\data\kp_rsa4096\password.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MSTest.TestAdapter" Version="2.2.7" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.2.7" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
