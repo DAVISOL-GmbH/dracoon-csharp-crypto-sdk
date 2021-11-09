@@ -38,13 +38,13 @@ jobs:
       Authors: DRACOON developers, enhancements by DAVISOL GmbH
       Company: Dracoon GmbH
       Product: Dracoon Crypto Sdk for .NET Standard
-      Description: A library which implements the client-side encryption of Dracoon, ported to .NET Standard and enhanced by DAVISOL GmbH.
+      Description: A library which implements the client-side encryption of Dracoon, ported to .NET 5.0 and enhanced by DAVISOL GmbH.
       Copyright: Copyright © 2017
       PackageLicenseUrl: https://www.apache.org/licenses/LICENSE-2.0.txt
       PackageProjectUrl: https://github.com/dracoon/dracoon-csharp-crypto-sdk
       PackageIconUrl: https://raw.githubusercontent.com/dracoon/dracoon-csharp-crypto-sdk/master/DracoonCryptoSdk/DracoonCryptoSdk_NugetImage.png
       RepositoryUrl: https://github.com/shuebner20/dracoon-csharp-crypto-sdk/tree/csharpstandard
-      PackageTags: dracoon crypto cryptography encryption netstandard davisol
+      PackageTags: dracoon crypto cryptography encryption net5 davisol
       VersionNumber: $(Build.BuildNumber)
       FileVersionNumber: $(Build.BuildNumber)
       InformationalVersion: $(Build.BuildNumber)
@@ -57,7 +57,6 @@ jobs:
       configuration: Release
       msbuildArguments: /p:SignAssembly=true /p:AssemblyOriginatorKeyFile=$(snkFile.secureFilePath)
       clean: true
-      restoreNugetPackages: true
   - task: CopyFiles@2
     displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)\lib\net5.0'
     inputs:
