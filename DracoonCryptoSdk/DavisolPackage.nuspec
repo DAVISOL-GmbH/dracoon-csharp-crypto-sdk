@@ -46,7 +46,18 @@
     </dependencies>
   </metadata>
   <files>
+    
+    <!-- .Net Standard 2.1 -->
+    <file src="bin\Release\netstandard2.1\Dracoon.Crypto.Sdk.dll" target="lib\netstandard2.1\Dracoon.Crypto.Sdk.dll" />
+    <file src="bin\Release\netstandard2.1\Dracoon.Crypto.Sdk.xml" target="lib\netstandard2.1\Dracoon.Crypto.Sdk.xml" />
+      
+    <!-- .Net Framework 4.7.2 -->
+    <file src="bin\Release\net472\Dracoon.Crypto.Sdk.dll" target="lib\net472\Dracoon.Crypto.Sdk.dll" />
+    <file src="bin\Release\net472\Dracoon.Crypto.Sdk.xml" target="lib\net472\Dracoon.Crypto.Sdk.xml" />
+
+    <!-- .Net 5.0 -->
     <file src="bin\Release\net5.0\Dracoon.Crypto.Sdk.dll" target="lib\net5.0\Dracoon.Crypto.Sdk.dll" />
     <file src="bin\Release\net5.0\Dracoon.Crypto.Sdk.xml" target="lib\net5.0\Dracoon.Crypto.Sdk.xml" />
+
   </files>
 </package>
