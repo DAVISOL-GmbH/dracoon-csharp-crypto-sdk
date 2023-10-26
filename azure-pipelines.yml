@@ -1,13 +1,13 @@
 trigger:
   branches:
     include:
-    - v2.1_net5.0
-name: 2.1.$(BuildID)$(Rev:.r)-alpha
+    - v3.2_net8.0
+name: 3.2.$(BuildID)$(Rev:.r)-alpha
 resources:
   repositories:
   - repository: self
     type: git
-    ref: v2.1_net5.0
+    ref: v3.2_net8.0
 jobs:
 - job: Job_1
   displayName: DAVISOL agent job - Build and deploy dracoon-csharp-crypto-sdk
@@ -35,11 +35,11 @@ jobs:
       InsertAttributes: true
       GeneratePackageOnBuild: true
       PackageId: Dracoon.Crypto.Sdk.Net5
-      Authors: DRACOON developers, enhancements by DAVISOL GmbH
+      Authors: DRACOON Developers, enhancements by DAVISOL GmbH
       Company: Dracoon GmbH
       Product: Dracoon Crypto Sdk for .NET Standard
-      Description: A library which implements the client-side encryption of Dracoon, ported to .NET 5.0 and enhanced by DAVISOL GmbH.
-      Copyright: Copyright © 2017
+      Description: A library which implements the client-side encryption of Dracoon, ported to .NET Standard 2.0 / .NET 8.0 and enhanced by DAVISOL GmbH.
+      Copyright: Copyright © 2021
       PackageLicenseUrl: https://www.apache.org/licenses/LICENSE-2.0.txt
       PackageProjectUrl: https://github.com/dracoon/dracoon-csharp-crypto-sdk
       PackageIconUrl: https://raw.githubusercontent.com/dracoon/dracoon-csharp-crypto-sdk/master/DracoonCryptoSdk/DracoonCryptoSdk_NugetImage.png
@@ -58,11 +58,11 @@ jobs:
       msbuildArguments: /p:SignAssembly=true /p:AssemblyOriginatorKeyFile=$(snkFile.secureFilePath)
       clean: true
   - task: CopyFiles@2
-    displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)\lib\net5.0'
+    displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)\lib\net6.0'
     inputs:
       SourceFolder: DracoonCryptoSdk/bin/Release
       Contents: '**/Dracoon.Crypto.Sdk.*'
-      TargetFolder: $(Build.ArtifactStagingDirectory)\lib\net5.0
+      TargetFolder: $(Build.ArtifactStagingDirectory)\lib\net6.0
       CleanTargetFolder: true
       OverWrite: true
       flattenFolders: true

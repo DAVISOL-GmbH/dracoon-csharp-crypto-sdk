@@ -3,7 +3,7 @@
 
 A library which implements the client-side encryption of Dracoon.
 
-This package was ported to .NET 5.0 by DAVISOL. Please note that we do not offer binary releases. For official releases from Dracoon please refer to the Download section below.
+This package was ported by DAVISOL GmbH to .NET Standard 2.x with support up to .NET 8.0 whilst still supporting legacy .NET framework. Please note that we do not offer binary releases. For official releases from Dracoon please refer to the Download section below.
 
 # Introduction
 
@@ -15,18 +15,18 @@ https://support.dracoon.com/hc/en-us/articles/360000986345
 
 #### Minimum Requirements
 
-.NET 5.0
+Any .NET Standard 2.0 compliant .NET implementation. Refer to [Microsoft Docs](https://learn.microsoft.com/en-us/dotnet/standard/net-standard?tabs=net-standard-2-0#select-net-standard-version) for a list of compatible implementations of .NET, .NET Framework, .NET Core, Mono, Xamarin and UWP.
 
 #### Download
 
 NuGet: Add the this dependency to your packages.config:
 If you're using nuget with package management "Packages.config", then edit your project's "packages.config" and add this to the packages section:
 ```xml
-<package id="Dracoon.Crypto.Sdk.Net5" version="3.1.0" />
+<package id="Dracoon.Crypto.Sdk" version="3.1.0" />
 ```
 If you are using Visual Studio 2017 (or higher) add you're using nuget with package management "PackageReference" then edit your .csproj file and add this to the package dependency group:
 ```xml
-<PackageReference Include="Dracoon.Crypto.Sdk.Net5" Version="3.1.0" />
+<PackageReference Include="Dracoon.Crypto.Sdk" Version="3.1.0" />
 ```
 
 DLL import: The latest DLL can be found [here](https://github.com/dracoon/dracoon-csharp-crypto-sdk/releases).
@@ -75,7 +75,8 @@ static void Main(String[] args) {
 # Copyright and License
 
 Copyright 2021 Dracoon GmbH. All rights reserved.
-Copyright 2023 DAVISOL GmbH. All rights reserved.
+Copyright 2021 DAVISOL GmbH. All rights reserved.
+
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the
 License. You may obtain a copy of the License at

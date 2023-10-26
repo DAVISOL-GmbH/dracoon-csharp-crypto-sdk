@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFrameworks>netstandard2.0;netstandard2.1;net6.0;net7.0;net472;net481</TargetFrameworks>
     <Company>DRACOON GmbH</Company>
     <PackageId>Dracoon.Crypto.Sdk</PackageId>
     <Title>Dracoon Crypto SDK</Title>
@@ -11,13 +11,13 @@
     <AssemblyName>Dracoon.Crypto.Sdk</AssemblyName>
     <RootNamespace>Dracoon.Crypto.Sdk</RootNamespace>
     <PackageTags>dracoon, sdk, crypto, cryptography, encryption</PackageTags>
-    <Authors>DRACOON Developers</Authors>
+    <Authors>DRACOON Developers, enhancements by DAVISOL GmbH</Authors>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <PackageIcon>DracoonCryptoSdk_NugetImage.png</PackageIcon>
     <PackageIconUrl />
     <PackageProjectUrl>https://github.com/dracoon/dracoon-csharp-crypto-sdk</PackageProjectUrl>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <Version>3.2.0-SNAPSHOT</Version>
+    <Version>3.2.0-alpha</Version>
     <OutDir></OutDir>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <SignAssembly>False</SignAssembly>
@@ -38,29 +38,9 @@
       <PackagePath></PackagePath>
     </None>
   </ItemGroup>
+
   <ItemGroup>
-    <Compile Include="Crypto.cs" />
-    <Compile Include="CryptoConstants.cs" />
-    <Compile Include="CryptoException.cs" />
-    <Compile Include="CryptoSystemException.cs" />
-    <Compile Include="FileCipher.cs" />
-    <Compile Include="FileDecryptionCipher.cs" />
-    <Compile Include="BadFileException.cs" />
-    <Compile Include="FileEncryptionCipher.cs" />
-    <Compile Include="InvalidFileKeyException.cs" />
-    <Compile Include="InvalidKeyPairException.cs" />
-    <Compile Include="InvalidPasswordException.cs" />
-    <Compile Include="Model\EncryptedDataContainer.cs" />
-    <Compile Include="Model\EncryptedFileKey.cs" />
-    <Compile Include="Model\PlainDataContainer.cs" />
-    <Compile Include="Model\PlainFileKey.cs" />
-    <Compile Include="Model\UserKeyPair.cs" />
-    <Compile Include="Model\UserPrivateKey.cs" />
-    <Compile Include="Model\UserPublicKey.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    <PackageReference Include="BouncyCastle.Cryptography" Version="2.2.1" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+
 </Project>

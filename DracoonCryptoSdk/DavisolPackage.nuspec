@@ -4,7 +4,7 @@
     <!-- The identifier that must be unique within the hosting gallery -->
     <id>Dracoon.Crypto.Sdk.Net5</id>
 
-    <title>Davisol.Dracoon Crypto Sdk (.NET 5.0)</title>
+    <title>Davisol.Dracoon Crypto Sdk (.NET 8.0)</title>
 
     <!-- The package version number that is used when resolving dependencies -->
     <version>$version$</version>
@@ -33,12 +33,12 @@
     <description>A library which implements the client-side encryption of Dracoon / with enhancements by DAVISOL GmbH. This package references .NET 5.0 and can therefore be used platform independent.</description>
 
     <!-- Copyright information -->
-    <copyright>Copyright ©2017 Dracoon GmbH, Copyright ©2021 DAVISOL GmbH</copyright>
+    <copyright>Copyright ©2021 Dracoon GmbH, Copyright ©2021 DAVISOL GmbH</copyright>
 
     <!-- Tags appear in the gallery and can be used for tag searches -->
     <tags>dracoon crypto cryptography encryption net5 davisol</tags>
 
-    <releaseNotes>NET5.0 fork of offical Dracoon C# Crypto SDK: https://github.com/dracoon/dracoon-csharp-crypto-sdk</releaseNotes>
+    <releaseNotes>NET8.0 fork of offical Dracoon C# Crypto SDK: https://github.com/dracoon/dracoon-csharp-crypto-sdk</releaseNotes>
       
       <!-- Dependencies are automatically installed when the package is installed -->
     <dependencies>
@@ -58,10 +58,18 @@
     <!-- .Net Framework 4.7.2 -->
     <file src="bin\Release\net472\Dracoon.Crypto.Sdk.dll" target="lib\net472\Dracoon.Crypto.Sdk.dll" />
     <file src="bin\Release\net472\Dracoon.Crypto.Sdk.xml" target="lib\net472\Dracoon.Crypto.Sdk.xml" />
+      
+    <!-- .Net Framework 4.8.1 -->
+    <file src="bin\Release\net481\Dracoon.Crypto.Sdk.dll" target="lib\net481\Dracoon.Crypto.Sdk.dll" />
+    <file src="bin\Release\net481\Dracoon.Crypto.Sdk.xml" target="lib\net481\Dracoon.Crypto.Sdk.xml" />
 
-    <!-- .Net 5.0 -->
-    <file src="bin\Release\net5.0\Dracoon.Crypto.Sdk.dll" target="lib\net5.0\Dracoon.Crypto.Sdk.dll" />
-    <file src="bin\Release\net5.0\Dracoon.Crypto.Sdk.xml" target="lib\net5.0\Dracoon.Crypto.Sdk.xml" />
+    <!-- .Net 6.0 -->
+    <file src="bin\Release\net6.0\Dracoon.Crypto.Sdk.dll" target="lib\net6.0\Dracoon.Crypto.Sdk.dll" />
+    <file src="bin\Release\net6.0\Dracoon.Crypto.Sdk.xml" target="lib\net6.0\Dracoon.Crypto.Sdk.xml" />
+
+    <!-- .Net 7.0 -->
+    <file src="bin\Release\net7.0\Dracoon.Crypto.Sdk.dll" target="lib\net7.0\Dracoon.Crypto.Sdk.dll" />
+    <file src="bin\Release\net7.0\Dracoon.Crypto.Sdk.xml" target="lib\net7.0\Dracoon.Crypto.Sdk.xml" />
 
   </files>
 </package>
