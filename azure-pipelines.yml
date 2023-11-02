@@ -24,9 +24,9 @@ jobs:
       secureFile: b8a2e8f1-b598-4cb4-be12-ac73524065d8
       retryCount: 5
   - task: NuGetToolInstaller@1
-    displayName: Use NuGet 5.11.0
+    displayName: Use NuGet 6.7.0
     inputs:
-      versionSpec: '5.11.0'
+      versionSpec: '6.7.0'
   - task: NuGetCommand@2
     displayName: NuGet restore
   - task: Assembly-Info-NetCore@2
@@ -34,17 +34,17 @@ jobs:
     inputs:
       InsertAttributes: true
       GeneratePackageOnBuild: true
-      PackageId: Dracoon.Crypto.Sdk.Net5
+      PackageId: Dracoon.Crypto.Sdk.Net8
       Authors: DRACOON Developers, enhancements by DAVISOL GmbH
       Company: Dracoon GmbH
       Product: Dracoon Crypto Sdk for .NET Standard
       Description: A library which implements the client-side encryption of Dracoon, ported to .NET Standard 2.0 / .NET 8.0 and enhanced by DAVISOL GmbH.
       Copyright: Copyright © 2021
       PackageLicenseUrl: https://www.apache.org/licenses/LICENSE-2.0.txt
-      PackageProjectUrl: https://github.com/dracoon/dracoon-csharp-crypto-sdk
+      PackageProjectUrl: https://github.com/DAVISOL-GmbH/dracoon-csharp-crypto-sdk
       PackageIconUrl: https://raw.githubusercontent.com/dracoon/dracoon-csharp-crypto-sdk/master/DracoonCryptoSdk/DracoonCryptoSdk_NugetImage.png
-      RepositoryUrl: https://github.com/shuebner20/dracoon-csharp-crypto-sdk/tree/csharpstandard
-      PackageTags: dracoon crypto cryptography encryption net5 davisol
+      RepositoryUrl: https://github.com/DAVISOL-GmbH/dracoon-csharp-crypto-sdk/tree/v3.2_net8.0
+      PackageTags: dracoon crypto cryptography encryption net6 net8 netstandard2 davisol
       VersionNumber: $(Build.BuildNumber)
       FileVersionNumber: $(Build.BuildNumber)
       InformationalVersion: $(Build.BuildNumber)
@@ -52,10 +52,12 @@ jobs:
   - task: MSBuild@1
     displayName: Build solution **/*.sln
     inputs:
-      msbuildArchitecture: x64
-      platform: Any CPU
-      configuration: Release
-      msbuildArguments: /p:SignAssembly=true /p:AssemblyOriginatorKeyFile=$(snkFile.secureFilePath)
+      solution: '**/*.sln'
+      msbuildVersion: '17.0'
+      msbuildArchitecture: 'x64'
+      platform: 'Any CPU'
+      configuration: 'Release'
+      msbuildArguments: '/p:SignAssembly=true /p:AssemblyOriginatorKeyFile=$(snkFile.secureFilePath)'
       clean: true
   - task: CopyFiles@2
     displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)\lib\net6.0'
