@@ -27,7 +27,7 @@
 
     <!-- The description can be used in package manager UI. Note that the
             nuget.org gallery uses information you add in the portal. -->
-    <description>A library which implements the client-side encryption of DRACOON. Ported to .NET 8.0, enhanced and digitally signed by DAVISOL GmbH.</description>
+    <description>A library which implements the client-side encryption of DRACOON. Ported to .NET 8.0 and enhanced by DAVISOL GmbH.</description>
 
     <!-- Copyright information -->
     <copyright>Copyright ©2021 Dracoon GmbH</copyright>

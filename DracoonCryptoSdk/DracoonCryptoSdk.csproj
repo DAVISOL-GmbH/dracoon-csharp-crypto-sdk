@@ -5,7 +5,7 @@
     <Company>DRACOON GmbH</Company>
     <PackageId>Dracoon.Crypto.Sdk.Net8</PackageId>
     <Title>Dracoon Crypto SDK</Title>
-    <Description>A library which implements the client-side encryption of DRACOON. Ported to .NET 8.0, enhanced and digitally signed by DAVISOL GmbH.</Description>
+    <Description>A library which implements the client-side encryption of DRACOON. Ported to .NET 8.0 and enhanced by DAVISOL GmbH.</Description>
     <Product>Dracoon Crypto SDK for .NET Standard</Product>
     <Copyright>Copyright ©2021 Dracoon GmbH</Copyright>
     <AssemblyName>Dracoon.Crypto.Sdk</AssemblyName>
