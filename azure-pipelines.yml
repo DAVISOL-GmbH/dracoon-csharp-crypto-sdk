@@ -35,16 +35,6 @@ jobs:
       InsertAttributes: true
       GeneratePackageOnBuild: true
       PackageId: Dracoon.Crypto.Sdk.Net8
-      Authors: DRACOON Developers, enhancements by DAVISOL GmbH
-      Company: Dracoon GmbH
-      Product: Dracoon Crypto Sdk for .NET Standard
-      Description: A library which implements the client-side encryption of Dracoon, ported to .NET Standard 2.0 / .NET 8.0 and enhanced by DAVISOL GmbH.
-      Copyright: Copyright © 2021
-      PackageLicenseUrl: https://www.apache.org/licenses/LICENSE-2.0.txt
-      PackageProjectUrl: https://github.com/DAVISOL-GmbH/dracoon-csharp-crypto-sdk
-      PackageIconUrl: https://raw.githubusercontent.com/dracoon/dracoon-csharp-crypto-sdk/master/DracoonCryptoSdk/DracoonCryptoSdk_NugetImage.png
-      RepositoryUrl: https://github.com/DAVISOL-GmbH/dracoon-csharp-crypto-sdk/tree/v3.2_net8.0
-      PackageTags: dracoon crypto cryptography encryption net6 net8 netstandard2 davisol
       VersionNumber: $(Build.BuildNumber)
       FileVersionNumber: $(Build.BuildNumber)
       InformationalVersion: $(Build.BuildNumber)

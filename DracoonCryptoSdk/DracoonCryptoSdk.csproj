@@ -3,20 +3,22 @@
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;netstandard2.1;net6.0;net7.0;net472;net481</TargetFrameworks>
     <Company>DRACOON GmbH</Company>
-    <PackageId>Dracoon.Crypto.Sdk</PackageId>
+    <PackageId>Dracoon.Crypto.Sdk.Net8</PackageId>
     <Title>Dracoon Crypto SDK</Title>
-    <Description>A library which implements the client-side encryption of DRACOON.</Description>
-    <Product>Dracoon Crypto Sdk for .NET Standard</Product>
+    <Description>A library which implements the client-side encryption of DRACOON. Ported to .NET 8.0, enhanced and digitally signed by DAVISOL GmbH.</Description>
+    <Product>Dracoon Crypto SDK for .NET Standard</Product>
     <Copyright>Copyright ©2021 Dracoon GmbH</Copyright>
     <AssemblyName>Dracoon.Crypto.Sdk</AssemblyName>
     <RootNamespace>Dracoon.Crypto.Sdk</RootNamespace>
-    <PackageTags>dracoon, sdk, crypto, cryptography, encryption</PackageTags>
+    <PackageTags>dracoon sdk crypto cryptography encryption net48 net6 net8 netstandard2 davisol</PackageTags>
     <Authors>DRACOON Developers, enhancements by DAVISOL GmbH</Authors>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <PackageIcon>DracoonCryptoSdk_NugetImage.png</PackageIcon>
     <PackageIconUrl />
-    <PackageProjectUrl>https://github.com/dracoon/dracoon-csharp-crypto-sdk</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/DAVISOL-GmbH/dracoon-csharp-crypto-sdk</PackageProjectUrl>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageIconUrl>https://raw.githubusercontent.com/dracoon/dracoon-csharp-crypto-sdk/master/DracoonCryptoSdk/DracoonCryptoSdk_NugetImage.png</PackageIconUrl>
+    <RepositoryUrl>https://github.com/DAVISOL-GmbH/dracoon-csharp-crypto-sdk/tree/v3.2_net8.0</RepositoryUrl>
     <Version>3.2.0-alpha</Version>
     <OutDir></OutDir>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
