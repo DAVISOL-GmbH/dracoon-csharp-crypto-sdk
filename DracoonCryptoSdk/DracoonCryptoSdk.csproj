@@ -14,7 +14,6 @@
     <Authors>DRACOON Developers, enhancements by DAVISOL GmbH</Authors>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <PackageIcon>DracoonCryptoSdk_NugetImage.png</PackageIcon>
-    <PackageIconUrl />
     <PackageProjectUrl>https://github.com/DAVISOL-GmbH/dracoon-csharp-crypto-sdk</PackageProjectUrl>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageIconUrl>https://raw.githubusercontent.com/dracoon/dracoon-csharp-crypto-sdk/master/DracoonCryptoSdk/DracoonCryptoSdk_NugetImage.png</PackageIconUrl>
