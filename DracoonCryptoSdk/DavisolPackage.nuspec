@@ -39,7 +39,7 @@
       
       <!-- Dependencies are automatically installed when the package is installed -->
     <dependencies>
-        <dependency id="Portable.BouncyCastle" version="2.2.1"/>
+        <dependency id="BouncyCastle.Cryptography" version="2.2.1"/>
     </dependencies>
   </metadata>
   <files>
