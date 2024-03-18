@@ -64,9 +64,13 @@
     <file src="bin\Release\net6.0\Dracoon.Crypto.Sdk.dll" target="lib\net6.0\Dracoon.Crypto.Sdk.dll" />
     <file src="bin\Release\net6.0\Dracoon.Crypto.Sdk.xml" target="lib\net6.0\Dracoon.Crypto.Sdk.xml" />
 
-    <!-- .Net 7.0 -->
-    <file src="bin\Release\net7.0\Dracoon.Crypto.Sdk.dll" target="lib\net7.0\Dracoon.Crypto.Sdk.dll" />
-    <file src="bin\Release\net7.0\Dracoon.Crypto.Sdk.xml" target="lib\net7.0\Dracoon.Crypto.Sdk.xml" />
+	  <!-- .Net 7.0 -->
+	  <file src="bin\Release\net7.0\Dracoon.Crypto.Sdk.dll" target="lib\net7.0\Dracoon.Crypto.Sdk.dll" />
+	  <file src="bin\Release\net7.0\Dracoon.Crypto.Sdk.xml" target="lib\net7.0\Dracoon.Crypto.Sdk.xml" />
+
+	  <!-- .Net 8.0 -->
+	  <file src="bin\Release\net8.0\Dracoon.Crypto.Sdk.dll" target="lib\net8.0\Dracoon.Crypto.Sdk.dll" />
+	  <file src="bin\Release\net8.0\Dracoon.Crypto.Sdk.xml" target="lib\net8.0\Dracoon.Crypto.Sdk.xml" />
 
   </files>
 </package>
