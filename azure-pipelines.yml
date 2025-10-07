@@ -24,9 +24,9 @@ jobs:
       secureFile: b8a2e8f1-b598-4cb4-be12-ac73524065d8
       retryCount: 5
   - task: NuGetToolInstaller@1
-    displayName: Use NuGet 6.7.0
+    displayName: Use NuGet 6.14.0
     inputs:
-      versionSpec: '6.7.0'
+      versionSpec: '6.14.0'
   - task: NuGetCommand@2
     displayName: NuGet restore
   - task: Assembly-Info-NetCore@2
