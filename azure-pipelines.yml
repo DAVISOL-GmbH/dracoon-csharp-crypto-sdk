@@ -1,13 +1,13 @@
 trigger:
   branches:
     include:
-    - v3.2_net8.0
-name: 3.2.$(BuildID)$(Rev:.r)-alpha
+    - v5.1_net8.0
+name: 5.1.$(BuildID)$(Rev:.r)-alpha
 resources:
   repositories:
   - repository: self
     type: git
-    ref: v3.2_net8.0
+    ref: v5.1_net8.0
 jobs:
 - job: Job_1
   displayName: DAVISOL agent job - Build and deploy dracoon-csharp-crypto-sdk
@@ -50,11 +50,11 @@ jobs:
       msbuildArguments: '/p:SignAssembly=true /p:AssemblyOriginatorKeyFile=$(snkFile.secureFilePath)'
       clean: true
   - task: CopyFiles@2
-    displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)\lib\net6.0'
+    displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)\lib\net8.0'
     inputs:
       SourceFolder: DracoonCryptoSdk/bin/Release
       Contents: '**/Dracoon.Crypto.Sdk.*'
-      TargetFolder: $(Build.ArtifactStagingDirectory)\lib\net6.0
+      TargetFolder: $(Build.ArtifactStagingDirectory)\lib\net8.0
       CleanTargetFolder: true
       OverWrite: true
       flattenFolders: true

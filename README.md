@@ -3,9 +3,7 @@
 
 A library which implements the client-side encryption of Dracoon.
 
-This package was ported by DAVISOL GmbH to .NET Standard 2.x with support up to .NET 7.0 whilst still supporting legacy .NET framework. Please note that we do not offer binary releases. For official releases from Dracoon please refer to the Download section below.
-
-Support for .NET 8.0 coming soon (after official release, which is currently planned for 2023-11-14).
+This package was ported by DAVISOL GmbH to .NET Standard 2.x with support up to .NET 8.0 whilst still supporting legacy .NET framework. Please note that we do not offer binary releases. For official releases from Dracoon please refer to the Download section below.
 
 # Introduction
 

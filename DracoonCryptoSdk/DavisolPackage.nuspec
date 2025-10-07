@@ -30,16 +30,16 @@
     <description>A library which implements the client-side encryption of DRACOON. Ported to .NET 8.0 and enhanced by DAVISOL GmbH.</description>
 
     <!-- Copyright information -->
-    <copyright>Copyright ©2021 Dracoon GmbH</copyright>
+    <copyright>Copyright ©2021 Dracoon GmbH, Copyright ©2021 DAVISOL GmbH</copyright>
 
     <!-- Tags appear in the gallery and can be used for tag searches -->
-    <tags>dracoon sdk crypto cryptography encryption net48 net6 net8 netstandard2 davisol</tags>
+    <tags>dracoon sdk crypto cryptography encryption net48 net8 netstandard2 davisol</tags>
 
     <releaseNotes>NET8.0 fork of offical Dracoon C# Crypto SDK: https://github.com/dracoon/dracoon-csharp-crypto-sdk</releaseNotes>
       
       <!-- Dependencies are automatically installed when the package is installed -->
     <dependencies>
-        <dependency id="BouncyCastle.Cryptography" version="2.2.1"/>
+        <dependency id="BouncyCastle.Cryptography" version="2.4.0"/>
     </dependencies>
   </metadata>
   <files>
@@ -59,14 +59,6 @@
     <!-- .Net Framework 4.8.1 -->
     <file src="bin\Release\net481\Dracoon.Crypto.Sdk.dll" target="lib\net481\Dracoon.Crypto.Sdk.dll" />
     <file src="bin\Release\net481\Dracoon.Crypto.Sdk.xml" target="lib\net481\Dracoon.Crypto.Sdk.xml" />
-
-    <!-- .Net 6.0 -->
-    <file src="bin\Release\net6.0\Dracoon.Crypto.Sdk.dll" target="lib\net6.0\Dracoon.Crypto.Sdk.dll" />
-    <file src="bin\Release\net6.0\Dracoon.Crypto.Sdk.xml" target="lib\net6.0\Dracoon.Crypto.Sdk.xml" />
-
-	  <!-- .Net 7.0 -->
-	  <file src="bin\Release\net7.0\Dracoon.Crypto.Sdk.dll" target="lib\net7.0\Dracoon.Crypto.Sdk.dll" />
-	  <file src="bin\Release\net7.0\Dracoon.Crypto.Sdk.xml" target="lib\net7.0\Dracoon.Crypto.Sdk.xml" />
 
 	  <!-- .Net 8.0 -->
 	  <file src="bin\Release\net8.0\Dracoon.Crypto.Sdk.dll" target="lib\net8.0\Dracoon.Crypto.Sdk.dll" />
