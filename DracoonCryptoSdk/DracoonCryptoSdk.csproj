@@ -17,8 +17,8 @@
     <PackageProjectUrl>https://github.com/DAVISOL-GmbH/dracoon-csharp-crypto-sdk</PackageProjectUrl>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageIconUrl>https://raw.githubusercontent.com/dracoon/dracoon-csharp-crypto-sdk/master/DracoonCryptoSdk/DracoonCryptoSdk_NugetImage.png</PackageIconUrl>
-    <RepositoryUrl>https://github.com/DAVISOL-GmbH/dracoon-csharp-crypto-sdk/tree/v3.2_net8.0</RepositoryUrl>
-    <Version>3.2.0-alpha</Version>
+    <RepositoryUrl>https://github.com/DAVISOL-GmbH/dracoon-csharp-crypto-sdk/tree/v5.1_net8.0</RepositoryUrl>
+    <Version>5.1.0-alpha</Version>
     <OutDir></OutDir>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <SignAssembly>False</SignAssembly>
@@ -41,7 +41,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="BouncyCastle.Cryptography" Version="2.3.0" />
+    <PackageReference Include="BouncyCastle.Cryptography" Version="2.4.0" />
   </ItemGroup>
 
 </Project>
