@@ -1,4 +1,4 @@
-using Dracoon.Crypto.Sdk.Model;
+﻿using Dracoon.Crypto.Sdk.Model;
 using System;
 using System.Diagnostics;
 using System.IO;
@@ -7,16 +7,19 @@ using System.Text;
 namespace Dracoon.Crypto.Sdk.Example {
     public static class Program {
 
-        private const string UserPassword = "acw9q857n(";
+        private const string UserPassword = "Qwer1234!ä🐛";
         private const string Data = "Things1\nOtherThings12\nMoreThings123";
         private const int BlockSize = 16;
 
         static void Main(String[] args) {
             // --- INITIALIZATION ---
+            char[] userPasswordChars = UserPassword.ToCharArray();
+
             // Generate key pair
-            UserKeyPair userKeyPair = Crypto.GenerateUserKeyPair(UserKeyPairAlgorithm.RSA4096, UserPassword);
+            UserKeyPair userKeyPair = Crypto.GenerateUserKeyPair(UserKeyPairAlgorithm.RSA4096, userPasswordChars);
+
             // Check key pair
-            if (!Crypto.CheckUserKeyPair(userKeyPair, UserPassword)) {
+            if (!Crypto.CheckUserKeyPair(userKeyPair, userPasswordChars)) {
                 Trace.WriteLine("Invalid user password!");
                 return;
             }
@@ -42,7 +45,7 @@ namespace Dracoon.Crypto.Sdk.Example {
             // --- DECRYPTION ---
             // Decrypt file key
             PlainFileKey decFileKey = Crypto.DecryptFileKey(encFileKey, userKeyPair.UserPrivateKey,
-                    UserPassword);
+                    userPasswordChars);
             // Decrypt blocks
             byte[] decData = DecryptData(decFileKey, encData);
 
@@ -150,3 +153,4 @@ namespace Dracoon.Crypto.Sdk.Example {
         }
     }
 }
+

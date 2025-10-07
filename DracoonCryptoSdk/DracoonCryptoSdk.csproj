@@ -17,7 +17,7 @@
     <PackageIconUrl />
     <PackageProjectUrl>https://github.com/dracoon/dracoon-csharp-crypto-sdk</PackageProjectUrl>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <Version>3.2.0-SNAPSHOT</Version>
+    <Version>5.1.0-SNAPSHOT</Version>
     <OutDir></OutDir>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <SignAssembly>False</SignAssembly>
@@ -39,25 +39,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Crypto.cs" />
-    <Compile Include="CryptoConstants.cs" />
-    <Compile Include="CryptoException.cs" />
-    <Compile Include="CryptoSystemException.cs" />
-    <Compile Include="FileCipher.cs" />
-    <Compile Include="FileDecryptionCipher.cs" />
-    <Compile Include="BadFileException.cs" />
-    <Compile Include="FileEncryptionCipher.cs" />
-    <Compile Include="InvalidFileKeyException.cs" />
-    <Compile Include="InvalidKeyPairException.cs" />
-    <Compile Include="InvalidPasswordException.cs" />
-    <Compile Include="Model\EncryptedDataContainer.cs" />
-    <Compile Include="Model\EncryptedFileKey.cs" />
-    <Compile Include="Model\PlainDataContainer.cs" />
-    <Compile Include="Model\PlainFileKey.cs" />
-    <Compile Include="Model\UserKeyPair.cs" />
-    <Compile Include="Model\UserPrivateKey.cs" />
-    <Compile Include="Model\UserPublicKey.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    <PackageReference Include="BouncyCastle.Cryptography" Version="2.4.0" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
