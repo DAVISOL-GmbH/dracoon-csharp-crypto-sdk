@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <packageSources>
+    <add key="Davisol3rdPartyNuGet" value="https://pkgs.dev.azure.com/davisol/_packaging/Davisol3rdPartyNuGet/nuget/v3/index.json" />
+  </packageSources>
+  <!--<activePackageSource>
+    <add key="All" value="(Aggregate source)" />
+  </activePackageSource>-->
+  <apikeys>
+    <add key="https://pkgs.dev.azure.com/davisol/_packaging/Davisol3rdPartyNuGet/nuget/v3/index.json" value="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZj7fwZlAt0+dwNJBSKYZfQAAAAACAAAAAAAQZgAAAAEAACAAAAC7Mj4oHznRIQBJLPfEU147ILRGjWkvqqk+ASvsb+CVCQAAAAAOgAAAAAIAACAAAAAQob54hu+3gjQ2V3I0ATpsC52ISDW/XU2xC/6u7IM+C0AAAAB5R23TyNe6hWzR+Skut1GpbA1SFpMVwOwE88gTYOmTLmESkwxuSIpQCTHs3uwLv0iYuo7+9GbhWU7Uu8gZCSjtQAAAAMm2ttxZfBblptDPATXI/nfSQQMDK6WweSoZheDazctwEAnUDldTRwS4A7B1zgBa9/7l83kqYqmQGYRqUf8CfRQ=" />
+    <add key="Davisol3rdPartyNuGet" value="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZj7fwZlAt0+dwNJBSKYZfQAAAAACAAAAAAAQZgAAAAEAACAAAAC7Mj4oHznRIQBJLPfEU147ILRGjWkvqqk+ASvsb+CVCQAAAAAOgAAAAAIAACAAAAAQob54hu+3gjQ2V3I0ATpsC52ISDW/XU2xC/6u7IM+C0AAAAB5R23TyNe6hWzR+Skut1GpbA1SFpMVwOwE88gTYOmTLmESkwxuSIpQCTHs3uwLv0iYuo7+9GbhWU7Uu8gZCSjtQAAAAMm2ttxZfBblptDPATXI/nfSQQMDK6WweSoZheDazctwEAnUDldTRwS4A7B1zgBa9/7l83kqYqmQGYRqUf8CfRQ=" />
+  </apikeys>
+  <!--<packageSourceCredentials>
+    <Davisol3rdPartyNuGet>
+      <add key="Username" value="user@my-private-server.com" />
+      <add key="Password" value="...my-super-secrete-password..." />
+    </Davisol3rdPartyNuGet>
+  </packageSourceCredentials>-->
+</configuration>

@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <!-- The identifier that must be unique within the hosting gallery -->
+    <id>Dracoon.Crypto.Sdk.Net5</id>
+
+    <title>Davisol.Dracoon Crypto Sdk (.NET 5.0)</title>
+
+    <!-- The package version number that is used when resolving dependencies -->
+    <version>$version$</version>
+
+    <!-- Authors contain text that appears directly on the gallery -->
+    <authors>dracoon developers</authors>
+
+    <!-- Owners are typically nuget.org identities that allow gallery
+            users to easily find other packages by the same owners.  -->
+    <owners>dracoon</owners>
+
+    <!-- License and project URLs provide links for the gallery -->
+    <!-- License and project URLs provide links for the gallery -->
+    <license type="expression">Apache-2.0</license>
+    <projectUrl>https://github.com/DAVISOL-GmbH/dracoon-csharp-crypto-sdk</projectUrl>
+
+    <!-- The icon is used in Visual Studio's package manager UI -->
+    <iconUrl>https://raw.githubusercontent.com/dracoon/dracoon-csharp-crypto-sdk/master/DracoonCryptoSdk/DracoonCryptoSdk_NugetImage.png</iconUrl>
+
+    <!-- If true, this value prompts the user to accept the license when
+            installing the package. -->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+
+    <!-- The description can be used in package manager UI. Note that the
+            nuget.org gallery uses information you add in the portal. -->
+    <description>A library which implements the client-side encryption of Dracoon / with enhancements by DAVISOL GmbH. This package references .NET 5.0 and can therefore be used platform independent.</description>
+
+    <!-- Copyright information -->
+    <copyright>Copyright ©2017 Dracoon GmbH, Copyright ©2021 DAVISOL GmbH</copyright>
+
+    <!-- Tags appear in the gallery and can be used for tag searches -->
+    <tags>dracoon crypto cryptography encryption net5 davisol</tags>
+
+    <releaseNotes>NET5.0 fork of offical Dracoon C# Crypto SDK: https://github.com/dracoon/dracoon-csharp-crypto-sdk</releaseNotes>
+      
+      <!-- Dependencies are automatically installed when the package is installed -->
+    <dependencies>
+        <dependency id="Portable.BouncyCastle" version="1.9.0"/>
+    </dependencies>
+  </metadata>
+  <files>
+    
+    <!-- .Net Standard 2.0 -->
+    <file src="bin\Release\netstandard2.0\Dracoon.Crypto.Sdk.dll" target="lib\netstandard2.0\Dracoon.Crypto.Sdk.dll" />
+    <file src="bin\Release\netstandard2.0\Dracoon.Crypto.Sdk.xml" target="lib\netstandard2.0\Dracoon.Crypto.Sdk.xml" />
+    
+    <!-- .Net Standard 2.1 -->
+    <file src="bin\Release\netstandard2.1\Dracoon.Crypto.Sdk.dll" target="lib\netstandard2.1\Dracoon.Crypto.Sdk.dll" />
+    <file src="bin\Release\netstandard2.1\Dracoon.Crypto.Sdk.xml" target="lib\netstandard2.1\Dracoon.Crypto.Sdk.xml" />
+      
+    <!-- .Net Framework 4.7.2 -->
+    <file src="bin\Release\net472\Dracoon.Crypto.Sdk.dll" target="lib\net472\Dracoon.Crypto.Sdk.dll" />
+    <file src="bin\Release\net472\Dracoon.Crypto.Sdk.xml" target="lib\net472\Dracoon.Crypto.Sdk.xml" />
+
+    <!-- .Net 5.0 -->
+    <file src="bin\Release\net5.0\Dracoon.Crypto.Sdk.dll" target="lib\net5.0\Dracoon.Crypto.Sdk.dll" />
+    <file src="bin\Release\net5.0\Dracoon.Crypto.Sdk.xml" target="lib\net5.0\Dracoon.Crypto.Sdk.xml" />
+
+  </files>
+</package>
